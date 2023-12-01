@@ -1,0 +1,18 @@
+<h2>INTERPOLATION</h2>
+<p> {{nome}} tem {{idade}} anos!</p>
+<p>{{nome}} tem mais que 28?</p>
+<p>{{idade > 28}}</p>
+
+<hr>
+
+<h2>PROPERTY BINDING</h2>
+<button [disabled]="checkedDisabled">Button</button>
+ 
+<h3>EVENT BINDING</h3>
+ 
+<button (click)="alertInfo()">Evento</button>
+
+<hr>
+<h3>TWO WAY BINDING</h3>
+<input [(ngModel)] = "nome">
+{{nome}}

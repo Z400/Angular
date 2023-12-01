@@ -1,0 +1,18 @@
+*<hr>
+<p *ngIf = condition>true</p>
+
+<hr>
+<ul>
+    <li *ngFor = "let item of list; let i = index;" (click) = "onEventList (i)">
+        {{i}} - {{item.nome}}, {{item.idade}}</li>
+
+    <button (click) = "clickToAdd ()">Add</button>
+</ul>
+
+<hr>
+
+<h1>SWITCH CASE</h1>
+<div [ngSwitch] = "nome">
+<p *ngSwitchCase="'Dener'"></p>
+<p *ngSwitchCase="'Nay'"></p>
+</div>*/

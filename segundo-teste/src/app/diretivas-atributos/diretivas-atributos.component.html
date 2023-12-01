@@ -1,0 +1,22 @@
+<ng-content></ng-content>
+
+
+<div *ngIf="nome != 'exit'">
+<p [ngClass] = "{'active': valor, 'disabled': !valor}"> NgClass</p>
+
+<hr>
+<input [(ngModel)] = "nome"> {{nome}}
+</div>
+<button (click) = push()>Salvar</button>
+<li *ngFor = "let item of list">{{item.nome}}</li>
+
+<ng-template [ngIf] = "true">
+
+    <p>True</p>
+</ng-template> 
+
+<hr>
+<h2>Formatando uma data</h2>
+{{date | date :  "dd.MM.yyyy"}}
+
+<ng-content></ng-content>
