@@ -1,13 +1,14 @@
-@import "../../../../../dist/variables.scss";
+@import '../../../../../dist/variables.scss';
 
-:host{
-    display: flex;
-    justify-content: center;
-    margin-top: -40px;
- 
-input{
 
+:host {
+  display: flex;
+  justify-content: center;
+  margin-top: -80px;
+
+  input{
     width: 80%;
+
     border: none;
     background: $tertiary-background-color;
 
@@ -18,9 +19,8 @@ input{
     padding: 10px;
     box-sizing: border-box;
 
-
-&::placeholder {
-color: $secondary-text-color;
-}
-}
+    &::placeholder{
+      color: $secondary-text-color;
+    }
+  }
 }
